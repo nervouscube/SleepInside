@@ -1,1 +1,289 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SleepInside — Tokyo Alternative Rock</title>
+
+  <meta name="description" content="SleepInside — Tokyo Alternative Rock">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f5f4ef;
+      color: #111;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 24px;
+      border-bottom: 1px solid #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: #f5f4ef;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -0.04em;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid #111;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(70px, 15vw, 190px);
+      font-weight: normal;
+      letter-spacing: -0.08em;
+      line-height: 0.8;
+      margin: 0 0 40px -8px;
+    }
+
+    .hero-info {
+      display: flex;
+      justify-content: space-between;
+      max-width: 600px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 100px 0;
+      border-bottom: 1px solid #111;
+    }
+
+    .section-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    .live-date {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 7vw, 80px);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .live-venue {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .live-info {
+      font-size: 13px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .music-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(45px, 8vw, 100px);
+      line-height: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .music-meta {
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      border-bottom: 1px solid #111;
+      padding-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .profile-text {
+      max-width: 650px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(24px, 4vw, 45px);
+      line-height: 1.15;
+    }
+
+    footer {
+      padding: 40px 24px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 18px;
+      }
+
+      nav {
+        gap: 12px;
+        font-size: 11px;
+      }
+
+      main {
+        padding: 0 18px;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+
+      .hero h1 {
+        font-size: 20vw;
+      }
+
+      .hero-info {
+        display: block;
+      }
+
+      .hero-info div {
+        margin-bottom: 8px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      footer {
+        padding: 30px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">SLEEPINSIDE</a>
+
+    <nav>
+      <a href="#live">LIVE</a>
+      <a href="#music">MUSIC</a>
+      <a href="#profile">PROFILE</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>SleepInside</h1>
+
+      <div class="hero-info">
+        <div>TOKYO / JAPAN</div>
+        <div>ALTERNATIVE ROCK</div>
+        <div>2026 —</div>
+      </div>
+    </section>
+
+    <section id="live">
+
+      <div class="section-title">01 — NEXT LIVE</div>
+
+      <div class="live-date">2026.10.30</div>
+
+      <div class="live-venue">
+        心斎橋 Pangea
+      </div>
+
+      <div class="live-info">
+        <span>SleepInside presents</span>
+        <span>OPEN 18:30</span>
+        <span>START 19:00</span>
+        <span>ADV ¥4,000</span>
+      </div>
+
+    </section>
+
+    <section id="music">
+
+      <div class="section-title">02 — MUSIC</div>
+
+      <div class="music-title">
+        僕らの<br>パラダイス
+      </div>
+
+      <div class="music-meta">
+        9TH FULL ALBUM
+      </div>
+
+      <div class="links">
+        <a href="#" target="_blank">SPOTIFY ↗</a>
+        <a href="#" target="_blank">YOUTUBE ↗</a>
+        <a href="#" target="_blank">SOUNDCLOUD ↗</a>
+      </div>
+
+    </section>
+
+    <section id="profile">
+
+      <div class="section-title">03 — PROFILE</div>
+
+      <div class="profile-text">
+        SleepInside is an alternative rock band
+        based in Tokyo, Japan.
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© SleepInside</div>
+
+    <div class="links">
+      <a href="#" target="_blank">INSTAGRAM</a>
+      <a href="#" target="_blank">X</a>
+      <a href="#" target="_blank">YOUTUBE</a>
+    </div>
+  </footer>
+
+</body>
+</html>
