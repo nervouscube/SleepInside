@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -170,6 +171,18 @@
       font-size: 10px;
 
       transform: rotate(1deg);
+    }
+
+    .ascii {
+      margin-top: 50px;
+
+      font-family: "Courier New", Courier, monospace;
+
+      font-size: 10px;
+
+      line-height: 1.2;
+
+      white-space: pre-wrap;
     }
 
 
@@ -345,7 +358,7 @@
 
 
     /* ==========================================
-       OTHER RELEASES
+       RELEASE ARCHIVE
        ========================================== */
 
     .other-releases {
@@ -364,10 +377,21 @@
       content: "★ ";
     }
 
+    .release-category {
+      margin-top: 45px;
+      margin-bottom: 10px;
+
+      font-family: "Courier New", Courier, monospace;
+
+      font-size: 11px;
+
+      font-weight: bold;
+    }
+
     .release-item {
       display: grid;
 
-      grid-template-columns: 90px 1fr 100px;
+      grid-template-columns: 100px 1fr 100px;
 
       padding: 12px 0;
 
@@ -384,33 +408,39 @@
 
 
     /* ==========================================
-       PROFILE
+       BIOGRAPHY
        ========================================== */
 
-    .profile-text {
-      max-width: 750px;
+    .bio-intro {
+      max-width: 850px;
 
       font-family: "Times New Roman", Times, serif;
 
-      font-size: clamp(26px, 5vw, 55px);
+      font-size: clamp(25px, 4vw, 48px);
 
       line-height: 0.95;
 
-      letter-spacing: -3px;
+      letter-spacing: -2px;
 
-      text-decoration: underline;
+      margin-bottom: 60px;
     }
 
-    .profile-small {
-      max-width: 650px;
-
-      margin-top: 50px;
+    .bio-history {
+      max-width: 800px;
 
       font-family: "Courier New", Courier, monospace;
 
       font-size: 12px;
 
-      line-height: 1.7;
+      line-height: 1.8;
+    }
+
+    .bio-year {
+      display: inline-block;
+
+      width: 150px;
+
+      font-weight: bold;
     }
 
 
@@ -433,7 +463,7 @@
 
       flex-direction: column;
 
-      gap: 6px;
+      gap: 7px;
     }
 
     .link-list a::before {
@@ -479,29 +509,6 @@
       margin-top: 30px;
 
       font-size: 9px;
-    }
-
-
-    /* ==========================================
-       OLD INTERNET DETAILS
-       ========================================== */
-
-    .ascii {
-      margin-top: 50px;
-
-      font-family: "Courier New", Courier, monospace;
-
-      font-size: 10px;
-
-      line-height: 1.2;
-
-      white-space: pre-wrap;
-    }
-
-    ::selection {
-      background: #111;
-
-      color: #eeeeea;
     }
 
 
@@ -583,14 +590,17 @@
         letter-spacing: -6px;
       }
 
-      .profile-text {
-        font-size: 34px;
+      .bio-intro {
+        font-size: 32px;
+      }
 
-        letter-spacing: -2px;
+      .bio-year {
+        width: 100%;
+        display: block;
       }
 
       .release-item {
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 60px 1fr;
 
         gap: 5px;
       }
@@ -623,7 +633,7 @@
     <nav>
       <a href="#live">LIVE</a>
       <a href="#music">MUSIC</a>
-      <a href="#profile">PROFILE</a>
+      <a href="#bio">BIO</a>
       <a href="#links">LINK</a>
     </nav>
 
@@ -654,9 +664,9 @@
       </div>
 
       <div class="ascii">
-        -------------------------------<br>
-        WELCOME TO THE SLEEPINSIDE WEB SITE<br>
-        -------------------------------
+-------------------------------<br>
+WELCOME TO THE SLEEPINSIDE WEB SITE<br>
+-------------------------------
       </div>
 
     </div>
@@ -742,19 +752,19 @@
 
           <div class="music-links">
 
-            <a href="#" target="_blank">
+            <a href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ" target="_blank" rel="noopener">
               SPOTIFY ↗
             </a>
 
-            <a href="#" target="_blank">
+            <a href="https://music.apple.com/jp/artist/sleepinside/1461005848" target="_blank" rel="noopener">
               APPLE MUSIC ↗
             </a>
 
-            <a href="#" target="_blank">
-              YOUTUBE ↗
+            <a href="https://x.com/sleeeepinside" target="_blank" rel="noopener">
+              X ↗
             </a>
 
-            <a href="#" target="_blank">
+            <a href="https://soundcloud.com/user-23767472" target="_blank" rel="noopener">
               SOUNDCLOUD ↗
             </a>
 
@@ -765,28 +775,135 @@
       </div>
 
 
+      <!-- RELEASE ARCHIVE -->
+
       <div class="other-releases">
 
         <div class="release-list-title">
-          OTHER RELEASES
+          RELEASE ARCHIVE
+        </div>
+
+
+        <div class="release-category">
+          [ ALBUM ]
         </div>
 
         <div class="release-item">
-          <span>2025</span>
-          <span>星デンキ</span>
-          <span>EP</span>
+          <span>2018</span>
+          <span>息を殺して</span>
+          <span>1ST ALBUM</span>
         </div>
 
         <div class="release-item">
-          <span>2024</span>
-          <span>[RELEASE TITLE]</span>
-          <span>ALBUM</span>
+          <span>2019</span>
+          <span>耳をすましてみれば</span>
+          <span>2ND ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2020.04</span>
+          <span>花弁と朝。</span>
+          <span>3RD ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2020.06</span>
+          <span>空中自転車</span>
+          <span>4TH ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2020.12</span>
+          <span>東京漂流グラデュエーション</span>
+          <span>5TH ALBUM</span>
         </div>
 
         <div class="release-item">
           <span>2023</span>
-          <span>[RELEASE TITLE]</span>
-          <span>ALBUM</span>
+          <span>SleepInside</span>
+          <span>6TH ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2024.07</span>
+          <span>Ctrl＋C ＆ Ctrl＋V</span>
+          <span>7TH ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2025.03</span>
+          <span>テレパシーを飛ばしている</span>
+          <span>8TH ALBUM</span>
+        </div>
+
+        <div class="release-item">
+          <span>2026</span>
+          <span>僕らのパラダイス</span>
+          <span>9TH ALBUM</span>
+        </div>
+
+
+        <div class="release-category">
+          [ EP ]
+        </div>
+
+        <div class="release-item">
+          <span>2020.08</span>
+          <span>ミッドナイトクルー</span>
+          <span>1ST EP</span>
+        </div>
+
+        <div class="release-item">
+          <span>2025.12</span>
+          <span>星デンキ</span>
+          <span>2ND EP</span>
+        </div>
+
+
+        <div class="release-category">
+          [ SINGLE ]
+        </div>
+
+        <div class="release-item">
+          <span>2021</span>
+          <span>Medical Care</span>
+          <span>1ST SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2022.02</span>
+          <span>picture ?</span>
+          <span>2ND SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2022.08</span>
+          <span>温かい弾倉</span>
+          <span>3RD SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2024.02</span>
+          <span>夜行性の羽</span>
+          <span>4TH SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2024.05</span>
+          <span>リサイクル</span>
+          <span>5TH SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2025.08</span>
+          <span>四丁目の夕日</span>
+          <span>6TH SINGLE</span>
+        </div>
+
+        <div class="release-item">
+          <span>2025.09</span>
+          <span>僕の飼っている鳥はよく飛ぶ</span>
+          <span>7TH SINGLE</span>
         </div>
 
       </div>
@@ -795,28 +912,44 @@
 
 
     <!-- ======================================
-         PROFILE
+         BIOGRAPHY
          ======================================= -->
 
-    <section id="profile">
+    <section id="bio">
 
       <div class="section-title">
-        03 — PROFILE
+        03 — BIOGRAPHY
       </div>
 
-      <div class="profile-text">
-        SleepInside is a band from Tokyo.
+      <div class="bio-intro">
+        SleepInside is a band / music project from Tokyo.
+        Recording, releasing and playing music independently.
       </div>
 
-      <div class="profile-small">
 
-        SleepInside / Alternative Rock / Tokyo, Japan.<br>
-        Formed in 2023.<br>
+      <div class="bio-history">
+
+        <div>
+          <span class="bio-year">2016</span>
+          宅録にて楽曲制作を開始
+        </div>
+
+        <div>
+          <span class="bio-year">2018.08.14</span>
+          SleepInside名義で音源を主にSoundCloudにて配信開始
+        </div>
+
+        <div>
+          <span class="bio-year">2025</span>
+          自主レーベル「NERVOUS CUBE」を設立
+        </div>
+
         <br>
-        音楽を作っています。<br>
-        ライブをしています。<br>
-        <br>
-        2026 — SLEEPINSIDE
+
+        <div>
+          <span class="bio-year">2026</span>
+          9th Album「僕らのパラダイス」をリリース
+        </div>
 
       </div>
 
@@ -824,7 +957,7 @@
 
 
     <!-- ======================================
-         LINK
+         LINKS
          ======================================= -->
 
     <section id="links">
@@ -841,20 +974,28 @@
 
         <div class="link-list">
 
-          <a href="#" target="_blank">
-            INSTAGRAM
+          <a href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ" target="_blank" rel="noopener">
+            SPOTIFY
           </a>
 
-          <a href="#" target="_blank">
+          <a href="https://music.apple.com/jp/artist/sleepinside/1461005848" target="_blank" rel="noopener">
+            APPLE MUSIC
+          </a>
+
+          <a href="https://x.com/sleeeepinside" target="_blank" rel="noopener">
             X / TWITTER
           </a>
 
-          <a href="#" target="_blank">
-            YOUTUBE
+          <a href="https://www.instagram.com/sleepinside14/?locale=ja_JP" target="_blank" rel="noopener">
+            INSTAGRAM
           </a>
 
-          <a href="#" target="_blank">
+          <a href="https://soundcloud.com/user-23767472" target="_blank" rel="noopener">
             SOUNDCLOUD
+          </a>
+
+          <a href="https://sleepinside.base.shop" target="_blank" rel="noopener">
+            ONLINE SHOP / 物販
           </a>
 
         </div>
@@ -883,8 +1024,8 @@
         MUSIC
       </a>
 
-      <a href="#profile">
-        PROFILE
+      <a href="#bio">
+        BIO
       </a>
 
       <a href="#links">
@@ -892,6 +1033,7 @@
       </a>
 
     </div>
+
 
     <div class="footer-info">
 
@@ -902,6 +1044,7 @@
       PLEASE COME BACK AGAIN.
 
     </div>
+
 
     <div class="copyright">
 
@@ -915,3 +1058,4 @@
 
 </body>
 </html>
+```
