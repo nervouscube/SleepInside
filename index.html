@@ -1,89 +1,616 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ja">
 
 <head>
-  <title>SleepInside</title>
-   <style>
-body {
-  background: #f5fffa;
-  color: black;
-}
-    
-     h1 {
-  font-size: 60px;
-  color: red; 
-  border: 3px solid black;
-}
-     img {
-  width: 300px; 
-  border: 3px solid black;
-  margin: 20px;
-}
-     .main {
-  border: 5px double black;
-　padding: 20px;
-  margin: 20px;
-}
-     .wrapper {
-  display: flex;
-}
-     .menu {
-  width: 200px;
-}
-     .menu a {
-  display: block;
-}
 
-.content {
-  flex: 1;
-}
-   </style>
+  <meta charset="UTF-8">
+
+  <title>SLEEPINSIDE // TOKYO</title>
+
+  <style>
+
+    /* =========================
+       基本設定
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: turquoise;
+      color: black;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0000EE;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: yellow;
+      background: red;
+    }
+
+
+    /* =========================
+       全体
+    ========================= */
+
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+
+
+    /* =========================
+       左メニュー
+    ========================= */
+
+    .menu {
+      width: 200px;
+      flex-shrink: 0;
+      border-right: 3px double black;
+      padding: 20px 15px;
+      font-family: "Courier New", monospace;
+    }
+
+    .menu-title {
+      font-size: 22px;
+      font-weight: bold;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      padding: 5px 0;
+      margin-bottom: 15px;
+    }
+
+    .menu a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       メインコンテンツ
+    ========================= */
+
+    .content {
+      flex: 1;
+      padding: 25px;
+      min-width: 0;
+    }
+
+
+    /* =========================
+       TOP
+    ========================= */
+
+    .top-box {
+      border: 5px double black;
+      padding: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 70px;
+      line-height: 0.9;
+      margin: 0 0 20px;
+      letter-spacing: -4px;
+    }
+
+    .top-box img {
+      width: 300px;
+      max-width: 100%;
+      border: 3px solid black;
+      margin: 15px 0;
+    }
+
+    .subtitle {
+      font-family: "Courier New", monospace;
+    }
+
+
+    /* =========================
+       セクション
+    ========================= */
+
+    section {
+      border: 3px double black;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 28px;
+      border-bottom: 2px dashed black;
+      padding-bottom: 5px;
+    }
+
+
+    /* =========================
+       LIVE
+    ========================= */
+
+    .live-date {
+      font-family: "Courier New", monospace;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .ticket {
+      display: inline-block;
+      border: 2px solid black;
+      padding: 8px 20px;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       MUSIC
+    ========================= */
+
+    .new-release {
+      border: 3px solid yellow;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .new-release-title {
+      color: red;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+    }
+
+    .album-title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       LINKS
+    ========================= */
+
+    .links a {
+      display: block;
+      margin: 10px 0;
+      font-family: "Courier New", monospace;
+    }
+
+
+    /* =========================
+       GIF
+    ========================= */
+
+    .gif-divider {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .gif-divider img {
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+    }
+
+
+    /* =========================
+       更新履歴
+    ========================= */
+
+    .updates {
+      border: 2px solid black;
+      padding: 15px;
+      font-family: "Courier New", monospace;
+    }
+
+    .update {
+      margin: 8px 0;
+    }
+
+    .date {
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top: 5px double black;
+      margin-top: 50px;
+      padding: 30px 10px;
+      text-align: center;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       スマホ
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .wrapper {
+        display: block;
+      }
+
+      .menu {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px double black;
+      }
+
+      .menu a {
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      .content {
+        padding: 12px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
-   <div class="wrapper">
 
-    <div class="menu">
-      MENU
-      <a href="#top">TOP</a>
+  <div class="wrapper">
+
+```
+<!-- =========================
+     MENU
+========================= -->
+
+<div class="menu">
+
+  <div class="menu-title">
+    ★ MENU
+  </div>
+
+  <a href="#top">TOP</a>
+
   <a href="#live">LIVE</a>
+
   <a href="#music">MUSIC</a>
+
   <a href="#profile">PROFILE</a>
+
   <a href="#link">LINK</a>
+
+  <a href="#update">UPDATE</a>
+
+</div>
+
+
+<!-- =========================
+     CONTENT
+========================= -->
+
+<main class="content">
+
+
+  <!-- TOP -->
+
+  <div class="top-box" id="top">
+
+    <h1>
+      Sleep<br>
+      Inside
+    </h1>
+
+    <img
+      src="sleepinside.jpg"
+      alt="SleepInside">
+
+    <div class="subtitle">
+
+      TOKYO / JAPAN
+      <br>
+      ALTERNATIVE ROCK BAND
 
     </div>
 
-    <div class="content"id="top">
- <div class="main">
- <h1>SleepInside</h1>
-  
-  <img src="sleepinside_logo.PNG" alt="SleepInside"width="300"border: 3px solid black;>
-<img src="コンポ 1.gif" alt="SleepInside"width="300">
-  <p>Internet / Tokyo Shimokitazawa / Japan</p>
-  
-    <p>Alternative Rock Band</p>
   </div>
-  
-  <h2 id="live">LIVE</h2>
 
-  <p>2026.10.30</p>
 
-  <h2 id="music>MUSIC</h2>
+  <!-- GIF -->
 
-  <p>僕らのパラダイス</p>
-  <a href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ" target="_blank" >
-Spotify
-</a>
+  <div class="gif-divider">
 
-  <h2 id="profile>PROFILE</h2>
+    <img
+      src="star.gif"
+      alt="">
 
-    <h2 id="link">LINK</h2>
+  </div>
 
-  <p>SleepInsideについて</p>
-  
-<a href="https://www.instagram.com/sleepinside14/?locale=ja_JP"target="_blank"> Instagram </a>
+
+  <!-- LIVE -->
+
+  <section id="live">
+
+    <h2>
+      ★ LIVE
+    </h2>
+
+    <div class="live-date">
+      2026.10.30
+    </div>
+
+    <p>
+      SLEEPINSIDE PRESENTS
+    </p>
+
+    <p>
+      心斎橋 Pangea
+    </p>
+
+    <p>
+      OPEN 18:30
+      <br>
+      START 19:00
+    </p>
+
+    <div class="ticket">
+      ADV ¥4,000
+    </div>
+
+  </section>
+
+
+  <!-- GIF -->
+
+  <div class="gif-divider">
+
+    <img
+      src="star.gif"
+      alt="">
+
+  </div>
+
+
+  <!-- MUSIC -->
+
+  <section id="music">
+
+    <h2>
+      ★ MUSIC
+    </h2>
+
+    <div class="new-release">
+
+      <div class="new-release-title">
+        ★★★ NEW RELEASE ★★★
+      </div>
+
+      <p>
+        2026
+      </p>
+
+      <div class="album-title">
+        僕らのパラダイス
+      </div>
+
+      <p>
+        9TH FULL ALBUM
+      </p>
+
+      <a
+        href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ"
+        target="_blank">
+        [ SPOTIFY ]
+      </a>
+
+      <br>
+
+      <a
+        href="https://music.apple.com/jp/artist/sleepinside/1461005848"
+        target="_blank">
+        [ APPLE MUSIC ]
+      </a>
+
+    </div>
+
+    <h3>ALBUM</h3>
+
+    <ul>
+
+      <li>2018 / 息を殺して</li>
+      <li>2019 / 耳をすましてみれば</li>
+      <li>2020.04 / 花弁と朝。</li>
+      <li>2020.06 / 空中自転車</li>
+      <li>2020.12 / 東京漂流グラデュエーション</li>
+      <li>2023 / SleepInside</li>
+      <li>2024.07 / Ctrl＋C ＆ Ctrl＋V</li>
+      <li>2025.03 / テレパシーを飛ばしている</li>
+      <li>2026 / 僕らのパラダイス</li>
+
+    </ul>
+
+    <h3>EP</h3>
+
+    <ul>
+
+      <li>2020.08 / ミッドナイトクルー</li>
+      <li>2025.12 / 星デンキ</li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- PROFILE -->
+
+  <section id="profile">
+
+    <h2>
+      ★ PROFILE
+    </h2>
+
+    <p>
+      東京を中心に活動する
+      オルタナティブロックバンド
+      「SleepInside」。
+    </p>
+
+    <p>
+      2016年、宅録にて楽曲制作を開始。
+    </p>
+
+    <p>
+      2018.08.14、
+      SleepInside名義で音源を
+      主にSoundCloudにて配信開始。
+    </p>
+
+    <p>
+      2025年、
+      自主レーベル「NERVOUS CUBE」を設立。
+    </p>
+
+    <p>
+      2026年、
+      9th Album「僕らのパラダイス」をリリース。
+    </p>
+
+  </section>
+
+
+  <!-- LINK -->
+
+  <section id="link">
+
+    <h2>
+      ★ LINK
+    </h2>
+
+    <div class="links">
+
+      <a
+        href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ"
+        target="_blank">
+        &gt;&gt; SPOTIFY
+      </a>
+
+      <a
+        href="https://music.apple.com/jp/artist/sleepinside/1461005848"
+        target="_blank">
+        &gt;&gt; APPLE MUSIC
+      </a>
+
+      <a
+        href="https://x.com/sleeeepinside"
+        target="_blank">
+        &gt;&gt; X / TWITTER
+      </a>
+
+      <a
+        href="https://www.instagram.com/sleepinside14/?locale=ja_JP"
+        target="_blank">
+        &gt;&gt; INSTAGRAM
+      </a>
+
+      <a
+        href="https://soundcloud.com/user-23767472"
+        target="_blank">
+        &gt;&gt; SOUNDCLOUD
+      </a>
+
+      <a
+        href="https://sleepinside.base.shop"
+        target="_blank">
+        &gt;&gt; ONLINE SHOP
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- UPDATE -->
+
+  <section id="update">
+
+    <h2>
+      ★ UPDATE
+    </h2>
+
+    <div class="updates">
+
+      <div class="update">
+        <span class="date">2026.09.03</span>
+        /
+        HP OPEN!!!
+      </div>
+
+      <div class="update">
+        <span class="date">2026.10.30</span>
+        /
+        Pangea LIVE INFO
+      </div>
+
+      <div class="update">
+        <span class="date">2026.09.03</span>
+        /
+        NEW RELEASE
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    ★ SLEEPINSIDE ★
+
+    <br><br>
+
+    THIS SITE IS STILL UNDER CONSTRUCTION.
+
+    <br>
+
+    PLEASE COME BACK AGAIN.
+
+    <br><br>
+
+    © SLEEPINSIDE 2026
+
+  </footer>
+
+
+</main>
+```
+
+  </div>
 
 </body>
 
 </html>
+
