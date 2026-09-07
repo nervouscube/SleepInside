@@ -10,10 +10,6 @@
 
   <style>
 
-    /* =========================
-       基本設定
-    ========================= */
-
     * {
       box-sizing: border-box;
     }
@@ -22,23 +18,23 @@
       margin: 0;
       background: white;
       color: black;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     a {
-      color: white;
+      color: black;
       text-decoration: underline;
     }
 
     a:visited {
-      color: purple;
+      color: black;
     }
 
     a:hover {
-      color: yellow;
-      background: red;
+      color: white;
+      background: black;
     }
 
 
@@ -48,7 +44,7 @@
 
     .wrapper {
       display: flex;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       min-height: 100vh;
     }
@@ -59,34 +55,29 @@
     ========================= */
 
     .menu {
-      width: 200px;
+      width: 180px;
       flex-shrink: 0;
-    
-      padding: 20px 15px;
-      font-family: "Courier New", monospace;
+      padding: 20px 10px;
     }
 
     .menu-title {
-      font-size: 22px;
-      font-weight: bold;
-      padding: 5px 0;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .menu a {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
 
     /* =========================
-       メインコンテンツ
+       メイン
     ========================= */
 
     .content {
       flex: 1;
-      padding: 25px;
       min-width: 0;
+      padding: 20px;
     }
 
 
@@ -95,28 +86,27 @@
     ========================= */
 
     .top-box {
-    
-      padding: 30px;
+      padding: 20px 0;
       margin-bottom: 30px;
-      text-align: center;
     }
 
     h1 {
-      font-size: 70px;
-      line-height: 0.9;
+      font-size: 32px;
+      font-weight: normal;
+      line-height: 1.2;
       margin: 0 0 20px;
-      letter-spacing: -4px;
+      letter-spacing: 0;
     }
 
     .top-box img {
       width: 300px;
       max-width: 100%;
-    
-      margin: 15px 0;
+      display: block;
+      margin-bottom: 15px;
     }
 
     .subtitle {
-      font-family: "Courier New", monospace;
+      font-size: 14px;
     }
 
 
@@ -125,67 +115,20 @@
     ========================= */
 
     section {
-     
-      padding: 20px;
-      margin-bottom: 30px;
+      padding: 20px 0;
+      margin-bottom: 20px;
     }
 
     h2 {
-      margin-top: 0;
-      font-size: 28px;
-      border-bottom: 2px dashed black;
-      padding-bottom: 5px;
+      margin: 0 0 20px;
+      font-size: 16px;
+      font-weight: normal;
     }
 
-
-    /* =========================
-       LIVE
-    ========================= */
-
-    .live-date {
-      font-family: "Courier New", monospace;
-      font-size: 40px;
-      font-weight: bold;
-    }
-
-    .ticket {
-      display: inline-block;
-     
-      padding: 8px 20px;
-      font-weight: bold;
-    }
-<div class="gif-divider"> <img src="コンポ 1.gif" alt=""> </div>
-
-    /* =========================
-       MUSIC
-    ========================= */
-
-    .new-release {
-     
-      padding: 20px;
-      margin-bottom: 25px;
-    }
-
-    .new-release-title {
-      color: red;
-      font-family: "Courier New", monospace;
-      font-weight: bold;
-    }
-
-    .album-title {
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-
-    /* =========================
-       LINKS
-    ========================= */
-
-    .links a {
-    
-      margin: 10px 0;
-      font-family: "Courier New", monospace;
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 25px;
     }
 
 
@@ -194,33 +137,146 @@
     ========================= */
 
     .gif-divider {
-      text-align: center;
-      margin: 30px 0;
+      margin: 20px 0;
     }
 
     .gif-divider img {
-      width: 200px;
+      width: 100px;
       max-width: 100%;
       height: auto;
     }
 
 
     /* =========================
-       更新履歴
+       LIVE
+    ========================= */
+
+    .live-date {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .ticket {
+      display: inline-block;
+      padding: 0;
+    }
+
+
+    /* =========================
+       MUSIC
+    ========================= */
+
+    .new-release {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .new-release-title {
+      font-weight: normal;
+      color: black;
+    }
+
+    .album-title {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+
+    /* =========================
+       LINKS
+    ========================= */
+
+    .links a {
+      display: block;
+      margin: 5px 0;
+    }
+
+
+    /* =========================
+       UPDATE
     ========================= */
 
     .updates {
-      border: 2px solid black;
-      padding: 15px;
-      font-family: "Courier New", monospace;
+      padding: 0;
     }
 
     .update {
-      margin: 8px 0;
+      margin: 5px 0;
     }
 
     .date {
-      font-weight: bold;
+      font-weight: normal;
+    }
+
+
+    /* =========================
+       CHAT
+    ========================= */
+
+    .chat-box {
+      padding: 0;
+    }
+
+    .chat-title {
+      margin-bottom: 15px;
+    }
+
+    .chat-log {
+      height: 300px;
+      overflow-y: auto;
+      padding: 10px 0;
+      margin-bottom: 15px;
+      background: white;
+    }
+
+    .chat-message {
+      margin-bottom: 12px;
+    }
+
+    .chat-name {
+      font-weight: normal;
+    }
+
+    .chat-time {
+      margin-right: 5px;
+    }
+
+    .chat-form {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .chat-form input {
+      border: 1px solid black;
+      background: white;
+      padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .chat-name-input {
+      width: 100px;
+    }
+
+    .chat-message-input {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .chat-form button {
+      border: 1px solid black;
+      background: white;
+      padding: 5px 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .chat-form button:hover {
+      background: black;
+      color: white;
     }
 
 
@@ -229,11 +285,9 @@
     ========================= */
 
     footer {
-      border-top: 5px double black;
       margin-top: 50px;
-      padding: 30px 10px;
-      text-align: center;
-      font-family: "Courier New", monospace;
+      padding: 20px 0;
+      text-align: left;
       font-size: 12px;
     }
 
@@ -250,8 +304,7 @@
 
       .menu {
         width: 100%;
-        border-right: none;
-        border-bottom: 3px double black;
+        padding: 15px 10px;
       }
 
       .menu a {
@@ -260,92 +313,15 @@
       }
 
       .content {
-        padding: 12px;
-      }
-
-      h1 {
-        font-size: 50px;
-      }
-
-      section {
         padding: 15px;
       }
 
+      h1 {
+        font-size: 24px;
+      }
+
     }
-/* =========================
-   CHAT ZONE
-========================= */
 
-.chat-box {
-  border: 3px solid black;
-  padding: 15px;
-  font-family: "Courier New", monospace;
-  background: #fff;
-}
-
-.chat-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.chat-log {
-  height: 300px;
-  overflow-y: auto;
-  border: 2px dashed black;
-  padding: 10px;
-  margin-bottom: 15px;
-  background: #f5f5f5;
-}
-
-.chat-message {
-  margin-bottom: 12px;
-}
-
-.chat-name {
-  font-weight: bold;
-}
-
-.chat-time {
-  font-size: 12px;
-  margin-right: 5px;
-}
-
-.chat-form {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.chat-name-input {
-  width: 120px;
-}
-
-.chat-message-input {
-  flex: 1;
-  min-width: 150px;
-}
-
-.chat-form input {
-  border: 2px solid black;
-  padding: 8px;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-}
-
-.chat-form button {
-  border: 2px solid black;
-  background: white;
-  padding: 8px 15px;
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.chat-form button:hover {
-  background: black;
-  color: white;
-}
   </style>
 
 </head>
@@ -355,14 +331,12 @@
   <div class="wrapper">
 
 ```
-<!-- =========================
-     MENU
-========================= -->
+<!-- MENU -->
 
 <div class="menu">
 
   <div class="menu-title">
-    ★ MENU
+    SLEEPINSIDE
   </div>
 
   <a href="#top">TOP</a>
@@ -376,15 +350,13 @@
   <a href="#link">LINK</a>
 
   <a href="#update">UPDATE</a>
-  
+
   <a href="#chat">CHAT</a>
 
 </div>
 
 
-<!-- =========================
-     CONTENT
-========================= -->
+<!-- CONTENT -->
 
 <main class="content">
 
@@ -394,8 +366,7 @@
   <div class="top-box" id="top">
 
     <h1>
-      Sleep<br>
-      Inside
+      SLEEPINSIDE
     </h1>
 
     <img
@@ -405,7 +376,9 @@
     <div class="subtitle">
 
       TOKYO / JAPAN
+
       <br>
+
       ALTERNATIVE ROCK BAND
 
     </div>
@@ -429,7 +402,7 @@
   <section id="live">
 
     <h2>
-      ★ LIVE
+      LIVE
     </h2>
 
     <div class="live-date">
@@ -441,7 +414,7 @@
     </p>
 
     <p>
-      心斎橋 Pangea
+      SHINSAIBASHI PANGEA
     </p>
 
     <p>
@@ -473,13 +446,13 @@
   <section id="music">
 
     <h2>
-      ★ MUSIC
+      MUSIC
     </h2>
 
     <div class="new-release">
 
       <div class="new-release-title">
-        ★★★ NEW RELEASE ★★★
+        NEW RELEASE
       </div>
 
       <p>
@@ -497,7 +470,7 @@
       <a
         href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ"
         target="_blank">
-        [ SPOTIFY ]
+        SPOTIFY
       </a>
 
       <br>
@@ -505,32 +478,47 @@
       <a
         href="https://music.apple.com/jp/artist/sleepinside/1461005848"
         target="_blank">
-        [ APPLE MUSIC ]
+        APPLE MUSIC
       </a>
 
     </div>
 
-    <h3>ALBUM</h3>
+
+    <h3>
+      ALBUM
+    </h3>
 
     <ul>
 
       <li>2018 / 息を殺して</li>
+
       <li>2019 / 耳をすましてみれば</li>
+
       <li>2020.04 / 花弁と朝。</li>
+
       <li>2020.06 / 空中自転車</li>
+
       <li>2020.12 / 東京漂流グラデュエーション</li>
+
       <li>2023 / SleepInside</li>
-      <li>2024.07 / Ctrl＋C ＆ Ctrl＋V</li>
+
+      <li>2024.07 / Ctrl+C &amp; Ctrl+V</li>
+
       <li>2025.03 / テレパシーを飛ばしている</li>
+
       <li>2026 / 僕らのパラダイス</li>
 
     </ul>
 
-    <h3>EP</h3>
+
+    <h3>
+      EP
+    </h3>
 
     <ul>
 
       <li>2020.08 / ミッドナイトクルー</li>
+
       <li>2025.12 / 星デンキ</li>
 
     </ul>
@@ -543,33 +531,34 @@
   <section id="profile">
 
     <h2>
-      ★ PROFILE
+      PROFILE
     </h2>
 
     <p>
-      東京を中心に活動する
-      オルタナティブロックバンド
-      「SleepInside」。
+      TOKYO ALTERNATIVE ROCK BAND
+      SLEEPINSIDE.
     </p>
 
     <p>
-      2016年、宅録にて楽曲制作を開始。
+      MUSIC PRODUCTION STARTED IN 2016.
     </p>
 
     <p>
-      2018.08.14、
-      SleepInside名義で音源を
-      主にSoundCloudにて配信開始。
+      SLEEPINSIDE BEGAN DISTRIBUTING MUSIC
+      MAINLY THROUGH SOUNDCLOUD IN 2018.
     </p>
 
     <p>
-      2025年、
-      自主レーベル「NERVOUS CUBE」を設立。
+      IN 2025,
+      SLEEPINSIDE ESTABLISHED
+      INDEPENDENT LABEL
+      "NERVOUS CUBE".
     </p>
 
     <p>
-      2026年、
-      9th Album「僕らのパラダイス」をリリース。
+      9TH ALBUM
+      "BOKURA NO PARADISE"
+      RELEASED IN 2026.
     </p>
 
   </section>
@@ -580,7 +569,7 @@
   <section id="link">
 
     <h2>
-      ★ LINK
+      LINK
     </h2>
 
     <div class="links">
@@ -588,37 +577,37 @@
       <a
         href="https://open.spotify.com/intl-ja/artist/3P7mbEpy5l2OM4LaCc6O8F?si=a1D755m5QxiD8w-vgay-GQ"
         target="_blank">
-        &gt;&gt; SPOTIFY
+        SPOTIFY
       </a>
 
       <a
         href="https://music.apple.com/jp/artist/sleepinside/1461005848"
         target="_blank">
-        &gt;&gt; APPLE MUSIC
+        APPLE MUSIC
       </a>
 
       <a
         href="https://x.com/sleeeepinside"
         target="_blank">
-        &gt;&gt; X / TWITTER
+        X / TWITTER
       </a>
 
       <a
         href="https://www.instagram.com/sleepinside14/?locale=ja_JP"
         target="_blank">
-        &gt;&gt; INSTAGRAM
+        INSTAGRAM
       </a>
 
       <a
         href="https://soundcloud.com/user-23767472"
         target="_blank">
-        &gt;&gt; SOUNDCLOUD
+        SOUNDCLOUD
       </a>
 
       <a
         href="https://sleepinside.base.shop"
         target="_blank">
-        &gt;&gt; ONLINE SHOP
+        ONLINE SHOP
       </a>
 
     </div>
@@ -631,7 +620,7 @@
   <section id="update">
 
     <h2>
-      ★ UPDATE
+      UPDATE
     </h2>
 
     <div class="updates">
@@ -639,13 +628,13 @@
       <div class="update">
         <span class="date">2026.09.03</span>
         /
-        HP OPEN!!!
+        HP OPEN
       </div>
 
       <div class="update">
         <span class="date">2026.10.30</span>
         /
-        Pangea LIVE INFO
+        PANGEA LIVE INFO
       </div>
 
       <div class="update">
@@ -657,75 +646,97 @@
     </div>
 
   </section>
-</section>
 
 
-<!-- CHAT -->
+  <!-- CHAT -->
 
-<section id="chat">
+  <section id="chat">
 
-  <h2>
-    ★ CHAT ZONE
-  </h2>
+    <h2>
+      CHAT
+    </h2>
 
-  <div class="chat-box">
+    <div class="chat-box">
 
-    <div class="chat-title">
-      ★ SLEEPINSIDE CHAT
-    </div>
-
-    <div class="chat-log" id="chatLog">
-
-      <div class="chat-message">
-        <span class="chat-time">SYSTEM</span>
-        <span class="chat-name">---</span>
-        <br>
-        WELCOME TO SLEEPINSIDE CHAT.
+      <div class="chat-title">
+        SLEEPINSIDE CHAT
       </div>
 
-      <div class="chat-message">
-        <span class="chat-time">SYSTEM</span>
-        <span class="chat-name">---</span>
-        <br>
-        SAY SOMETHING.
+      <div class="chat-log" id="chatLog">
+
+        <div class="chat-message">
+
+          <span class="chat-time">
+            SYSTEM
+          </span>
+
+          <span class="chat-name">
+            ---
+          </span>
+
+          <br>
+
+          WELCOME TO SLEEPINSIDE CHAT.
+
+        </div>
+
+
+        <div class="chat-message">
+
+          <span class="chat-time">
+            SYSTEM
+          </span>
+
+          <span class="chat-name">
+            ---
+          </span>
+
+          <br>
+
+          SAY SOMETHING.
+
+        </div>
+
       </div>
+
+
+      <form
+        class="chat-form"
+        id="chatForm">
+
+        <input
+          type="text"
+          id="chatName"
+          class="chat-name-input"
+          placeholder="NAME"
+          maxlength="20"
+          required>
+
+        <input
+          type="text"
+          id="chatMessage"
+          class="chat-message-input"
+          placeholder="MESSAGE..."
+          maxlength="100"
+          required>
+
+        <button
+          type="submit">
+          SEND
+        </button>
+
+      </form>
 
     </div>
 
-    <form class="chat-form" id="chatForm">
-
-      <input
-        type="text"
-        id="chatName"
-        class="chat-name-input"
-        placeholder="NAME"
-        maxlength="20"
-        required>
-
-      <input
-        type="text"
-        id="chatMessage"
-        class="chat-message-input"
-        placeholder="MESSAGE..."
-        maxlength="100"
-        required>
-
-      <button type="submit">
-        SEND
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
+  </section>
 
 
-<footer>
+  <!-- FOOTER -->
 
   <footer>
 
-    ★ SLEEPINSIDE ★
+    SLEEPINSIDE
 
     <br><br>
 
@@ -747,7 +758,94 @@
 
   </div>
 
+  <!-- CHAT SCRIPT -->
+
+  <script>
+
+    const chatForm =
+      document.getElementById("chatForm");
+
+    const chatLog =
+      document.getElementById("chatLog");
+
+
+    chatForm.addEventListener(
+      "submit",
+      function(event) {
+
+        event.preventDefault();
+
+
+        const name =
+          document
+            .getElementById("chatName")
+            .value
+            .trim();
+
+
+        const message =
+          document
+            .getElementById("chatMessage")
+            .value
+            .trim();
+
+
+        if (!name || !message) {
+          return;
+        }
+
+
+        const now = new Date();
+
+
+        const time =
+          String(now.getHours()).padStart(2, "0")
+          +
+          ":"
+          +
+          String(now.getMinutes()).padStart(2, "0");
+
+
+        const newMessage =
+          document.createElement("div");
+
+
+        newMessage.className =
+          "chat-message";
+
+
+        newMessage.innerHTML = `
+          <span class="chat-time">
+            ${time}
+          </span>
+
+          <span class="chat-name">
+            ${name}
+          </span>
+
+          <br>
+
+          ${message}
+        `;
+
+
+        chatLog.appendChild(newMessage);
+
+
+        chatLog.scrollTop =
+          chatLog.scrollHeight;
+
+
+        document
+          .getElementById("chatMessage")
+          .value = "";
+
+      }
+
+    );
+
+  </script>
+
 </body>
 
 </html>
-
